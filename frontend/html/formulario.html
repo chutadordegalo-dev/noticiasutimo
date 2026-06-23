@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Notícias</title>
+    <link rel="stylesheet" href="../css/formulario.css">
+</head>
+
+<body class="claro">
+
+    <header>
+        <button onclick="alternartema()">Tema</button>
+
+        <img src="../img/nolimite.jpg" alt="WebNews">
+
+        <h1>Cadastro</h1>
+    </header>
+
+    <main>
+
+        <form class="formulario">
+
+            <h2>Nova Notícia</h2>
+
+            <label>Título</label>
+            <input type="text" placeholder="Digite o título da notícia">
+
+            <label>Autor</label>
+            <input type="text" placeholder="Digite o nome do autor">
+
+            <label>Categoria</label>
+            <select>
+                <option>Tecnologia</option>
+                <option>Esportes</option>
+                <option>Política</option>
+                <option>Economia</option>
+                <option>Entretenimento</option>
+            </select>
+
+            <label>Imagem</label>
+            <input type="url" placeholder="URL da imagem">
+
+            <label>Resumo</label>
+            <textarea rows="5" placeholder="Digite um resumo da notícia"></textarea>
+
+            <button type="submit" class="btn-enviar">
+                Publicar Notícia
+            </button>
+
+        </form>
+
+    </main>
+
+    <script src="../js/formulario.js">
+        function alternartema() {
+            document.body.classList.toggle("escuro");
+        }
+        
+    </script>
+
+</body>
+
+</html>
