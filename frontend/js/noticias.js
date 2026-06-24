@@ -31,7 +31,7 @@ async function exibir_noticias() {
     const section = document.getElementById("noticias");
     section.innerHTML = "<h2>Aguarde, carregando documento...</h2>";
 
-    const resposta = await fetch("https://noticias-backend-gudu-3000.up.railway.app/noticias");
+    const resposta = await fetch("https://noticias-backend-caio-caua.up.railway.app/noticias");
     const noticias = await resposta.json();
 
     var html = "";

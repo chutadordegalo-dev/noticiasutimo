@@ -64,5 +64,5 @@ app.post('/noticias', async (req, res) => {
 });
 
 app.listen(3000, () =>{
-    console.log("Servidor online em https://noticias-backend-gudu-3000.up.railway.app");
+    console.log("Servidor online em http://localhost:3000")
 });
